@@ -1,13 +1,13 @@
 class Solution:
     def finalString(self, s: str) -> str:
-        res = ""
+        output = ""
         for i in s:
             if i == 'i':
-                res = res[::-1]
+                output = output[::-1]
             else:
-                res += i
+                output += i
 
-        return res
+        return output
 
 
         
