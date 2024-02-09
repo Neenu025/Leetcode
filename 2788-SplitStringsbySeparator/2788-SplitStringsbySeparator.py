@@ -1,15 +1,10 @@
 class Solution:
-    def splitWordsBySeparator(self, words: List[str], separator: str) -> List[str]:
-        result = []
-        for word in words:
-            split_word = word.split(separator)
-            print(split_word)
-            for sub_word in split_word:
-                if sub_word != "":
-                    result.append(sub_word)
-        return result
-
-
-
-        
+    def findMaxK(self, nums: List[int]) -> int:
+        nums.sort()
+        for i in range(len(nums)):
+            for j in range(len(nums)-1,-1,-1):
+                if nums[i] == -(nums[j]):
+                    return abs(nums[j])
+        return -1
+            
 [
