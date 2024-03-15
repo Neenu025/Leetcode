@@ -13,4 +13,4 @@ class Solution:
         
 
         
-"
+"the sky is blue"
