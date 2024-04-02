@@ -6,7 +6,6 @@
         duplicate = sum(nums) - sum(set(nums))
 class Solution:
 
-
         missing = sum(nums_org) - sum(set(nums))
 
         op.append(duplicate)
